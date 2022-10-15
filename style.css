@@ -1,53 +1,213 @@
+:root {
+    --iris100: #5d5fef;
+    --iris80: #7879f1;
+    --iris60: #a5a6f6;
+    --iris40: #d1d2fb;
+    --iris20: #d9dafc;
+
+    --fuschia100: #ef5da8;
+    --fuschia80: #f178b6;
+    --fuschia60: #f6a5d4;
+    --fuschia40: #fbd1f2;
+    --fuschia20: #fff1f8;
+
+    --ambar100: #ff9100;
+    --ambar80: #ffad33;
+    --ambar60: #ffcc80;
+    --ambar40: #ffe0b3;
+    --ambar20: #fff2e5;
+
+    --lima100: #00c853;
+    --lima80: #33d679;
+    --lima60: #80e8b3;
+    --lima40: #b3f2d1;
+    --lima20: #e5fff2;
+
+    --textwhite: #f6f6f6;
+    --textblack: #1e1e1e;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 1%;
+}
+
+body.iris {
+    background-color: var(--iris60);
+}
+
+body.fuschia {
+    background-color: var(--fuschia60);
+}
+
+body.ambar {
+    background-color: var(--ambar60);
+}
+
+body.lima {
+    background-color: var(--lima60);
+}
+
 div.header {
-    /* Título */
-
-    /* Auto layout */
-
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px;
     gap: 10px;
 
-    width: 366px;
+    width: auto;
     height: 64px;
 
-    /* Iris/100 */
-
-    background: #5D5FEF;
+    /* background: var(--iris100); */
 
     border-radius: 12px;
+}
 
-    /* Inside auto layout */
+div.header.iris {
+    background-color: var(--iris100);
+}
 
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+div.header.fuschia {
+    background-color: var(--fuschia100);
+}
+
+div.header.ambar {
+    background-color: var(--ambar100);
+}
+
+div.header.lima {
+    background-color: var(--lima100);
+}
+
+div.temas {
+    width: 202px;
+    height: 40px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+}
+
+div.temas.iris {
+    background-color: var(--iris60);
+}
+
+div.temas.fuschia {
+    background-color: var(--fuschia60);
+}
+
+div.temas.ambar {
+    background-color: var(--ambar60);
+}
+
+div.temas.lima {
+    background-color: var(--lima60);
+}
+
+button {
+    width: 0px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+button.selected {
+    font-size: 14px;
+    width: 100px;
+}
+
+button#irisbutton {
+    background-color: var(--iris100);
+    color: var(--textwhite);
+}
+
+button#fuschiabutton {
+    background-color: var(--fuschia100);
+    color: var(--textwhite);
+}
+
+button#ambarbutton {
+    background-color: var(--ambar100);
+    color: var(--textwhite);
+}
+
+button#limabutton {
+    background-color: var(--lima100);
+    color: var(--textwhite);
 }
 
 p.header {
-    /* Header 1 */
-
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
     line-height: 40px;
-    /* identical to box height */
-    
+
     text-align: center;
     letter-spacing: -0.02em;
-    
-    /* Text/Light */
-    
-    color: #F7F7F7;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+
+    color: var(--textwhite);
+}
+
+body div p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+}
+
+div.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1%;
+    border-radius: 12px;
+}
+
+div.content.iris {
+    background-color: var(--iris40);
+}
+
+div.content.fuschia {
+    background-color: var(--fuschia40);
+}
+
+div.content.ambar {
+    background-color: var(--ambar40);
+}
+
+div.content.lima {
+    background-color: var(--lima40);
+}
+
+iframe {
+    margin: 0%;
+    border-radius: 12px;
+    justify-self: center;
+    border: none;
+    width: 100%;
+    height: 400px;
 }

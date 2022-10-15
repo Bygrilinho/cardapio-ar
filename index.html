@@ -6,12 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <title>Cardápio AR</title>
 </head>
-<body style="margin : 0px">
-    <!--<iframe src="ar.html" width="300px" height="300px"></iframe>-->
-    <div class="header">
-        <p class="header">Teste</p>
+<body class="iris">
+    <div class="header iris" id="ricas">
+        <p class="header">Empório Coffee Shop</p>
+        <div class="temas iris">
+            <button id="fuschiabutton" type="button" onclick="toggleFuschia()">FUSCHIA</button>
+            <button id="irisbutton" class="selected" type="button" onclick="toggleIris()">IRIS</button>
+            <button id="ambarbutton" type="button" onclick="toggleAmbar()">AMBAR</button>
+            <button id="limabutton" type="button" onclick="toggleLima()">LIMA</button>
+        </div>
     </div>
+    <div class="content iris">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatem eveniet incidunt repellendus corporis? Quo harum, veniam eos, magnam, natus itaque eius ducimus dolor rem deserunt doloremque aut neque nemo.</p>
+    </div>
+
+    <div class="content iris">
+        <iframe src="ar.html" scrolling="no"></iframe>
+    </div>
+    <script>
+        function toggleFuschia() {
+            const iris = document.querySelectorAll('.iris, .ambar, .lima');
+            
+            for (const box of iris) {
+                box.classList.remove('iris');
+                box.classList.remove('ambar');
+                box.classList.add('fuschia');
+                box.classList.remove('lima');
+            }
+            fuschiabutton = document.getElementById('fuschiabutton');
+            irisbutton = document.getElementById('irisbutton');
+            ambarbutton = document.getElementById('ambarbutton');
+            limabutton = document.getElementById('limabutton');
+            
+            fuschiabutton.classList.add('selected');
+            irisbutton.classList.remove('selected');
+            ambarbutton.classList.remove('selected');
+            limabutton.classList.remove('selected');
+        }
+
+        function toggleIris() {
+            const fuschia = document.querySelectorAll('.fuschia, .ambar, .lima');
+            for (const box of fuschia) {
+                box.classList.remove('fuschia');
+                box.classList.remove('ambar');
+                box.classList.add('iris');
+                box.classList.remove('lima');
+            }
+            fuschiabutton = document.getElementById('fuschiabutton');
+            irisbutton = document.getElementById('irisbutton');
+            ambarbutton = document.getElementById('ambarbutton');
+            limabutton = document.getElementById('limabutton');
+            
+            fuschiabutton.classList.remove('selected');
+            irisbutton.classList.add('selected');
+            ambarbutton.classList.remove('selected');
+            limabutton.classList.remove('selected');
+        }
+
+        function toggleAmbar() {
+            const ambar = document.querySelectorAll('.iris, .fuschia, .lima');
+            for (const box of ambar) {
+                box.classList.remove('fuschia');
+                box.classList.remove('iris');
+                box.classList.add('ambar');
+                box.classList.remove('lima');
+            }
+            fuschiabutton = document.getElementById('fuschiabutton');
+            irisbutton = document.getElementById('irisbutton');
+            ambarbutton = document.getElementById('ambarbutton');
+            limabutton = document.getElementById('limabutton');
+            
+            fuschiabutton.classList.remove('selected');
+            irisbutton.classList.remove('selected');
+            ambarbutton.classList.add('selected');
+            limabutton.classList.remove('selected');
+        }
+
+        function toggleLima() {
+            const lima = document.querySelectorAll('.iris, .fuschia, .ambar');
+            for (const box of lima) {
+                box.classList.remove('fuschia');
+                box.classList.remove('iris');
+                box.classList.remove('ambar');
+                box.classList.add('lima');
+            }
+            fuschiabutton = document.getElementById('fuschiabutton');
+            irisbutton = document.getElementById('irisbutton');
+            ambarbutton = document.getElementById('ambarbutton');
+            limabutton = document.getElementById('limabutton');
+            
+            fuschiabutton.classList.remove('selected');
+            irisbutton.classList.remove('selected');
+            ambarbutton.classList.remove('selected');
+            limabutton.classList.add('selected');
+        }
+    </script>
 </body>
 </html>
