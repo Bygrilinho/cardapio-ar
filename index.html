@@ -9,99 +9,95 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <title>Cardápio AR</title>
 </head>
-<body class="iris">
-    <div class="header iris" id="ricas">
+<body>
+    <div class="header">
         <p class="header">Empório Coffee Shop</p>
-        <div class="temas iris">
+        <div class="temas">
             <button id="fuschiabutton" type="button" onclick="toggleFuschia()">FUSCHIA</button>
             <button id="irisbutton" class="selected" type="button" onclick="toggleIris()">IRIS</button>
             <button id="ambarbutton" type="button" onclick="toggleAmbar()">AMBAR</button>
             <button id="limabutton" type="button" onclick="toggleLima()">LIMA</button>
         </div>
     </div>
-    <div class="content iris">
+    <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatem eveniet incidunt repellendus corporis? Quo harum, veniam eos, magnam, natus itaque eius ducimus dolor rem deserunt doloremque aut neque nemo.</p>
     </div>
 
-    <div class="content iris">
+    <div class="content">
         <iframe src="ar.html" scrolling="no"></iframe>
     </div>
     <script>
         function toggleFuschia() {
-            const iris = document.querySelectorAll('.iris, .ambar, .lima');
+            const stylesheet = document.styleSheets[0];
             
-            for (const box of iris) {
-                box.classList.remove('iris');
-                box.classList.remove('ambar');
-                box.classList.add('fuschia');
-                box.classList.remove('lima');
-            }
-            fuschiabutton = document.getElementById('fuschiabutton');
-            irisbutton = document.getElementById('irisbutton');
-            ambarbutton = document.getElementById('ambarbutton');
-            limabutton = document.getElementById('limabutton');
+            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--fuschia100)');
+            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--fuschia80)');
+            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--fuschia60)');
+            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--fuschia40)');
+            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--fuschia20)');
             
-            fuschiabutton.classList.add('selected');
-            irisbutton.classList.remove('selected');
-            ambarbutton.classList.remove('selected');
-            limabutton.classList.remove('selected');
+            // Button
+            document.getElementById("fuschiabutton").classList.add("selected");
+            document.querySelectorAll(".temas button").forEach((button) => {
+                if (button.id != "fuschiabutton") {
+                    button.classList.remove("selected");
+                }
+            });
+
         }
 
         function toggleIris() {
-            const fuschia = document.querySelectorAll('.fuschia, .ambar, .lima');
-            for (const box of fuschia) {
-                box.classList.remove('fuschia');
-                box.classList.remove('ambar');
-                box.classList.add('iris');
-                box.classList.remove('lima');
-            }
-            fuschiabutton = document.getElementById('fuschiabutton');
-            irisbutton = document.getElementById('irisbutton');
-            ambarbutton = document.getElementById('ambarbutton');
-            limabutton = document.getElementById('limabutton');
+            const stylesheet = document.styleSheets[0];
+
+            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--iris100)');
+            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--iris80)');
+            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--iris60)');
+            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--iris40)');
+            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--iris20)');
             
-            fuschiabutton.classList.remove('selected');
-            irisbutton.classList.add('selected');
-            ambarbutton.classList.remove('selected');
-            limabutton.classList.remove('selected');
+            // Button
+            document.getElementById("irisbutton").classList.add("selected");
+            document.querySelectorAll(".temas button").forEach((button) => {
+                if (button.id != "irisbutton") {
+                    button.classList.remove("selected");
+                }
+            });
         }
 
         function toggleAmbar() {
-            const ambar = document.querySelectorAll('.iris, .fuschia, .lima');
-            for (const box of ambar) {
-                box.classList.remove('fuschia');
-                box.classList.remove('iris');
-                box.classList.add('ambar');
-                box.classList.remove('lima');
-            }
-            fuschiabutton = document.getElementById('fuschiabutton');
-            irisbutton = document.getElementById('irisbutton');
-            ambarbutton = document.getElementById('ambarbutton');
-            limabutton = document.getElementById('limabutton');
+            const stylesheet = document.styleSheets[0];
+
+            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--ambar100)');
+            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--ambar80)');
+            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--ambar60)');
+            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--ambar40)');
+            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--ambar20)');
             
-            fuschiabutton.classList.remove('selected');
-            irisbutton.classList.remove('selected');
-            ambarbutton.classList.add('selected');
-            limabutton.classList.remove('selected');
+            // Button
+            document.getElementById("ambarbutton").classList.add("selected");
+            document.querySelectorAll(".temas button").forEach((button) => {
+                if (button.id != "ambarbutton") {
+                    button.classList.remove("selected");
+                }
+            });
         }
 
         function toggleLima() {
-            const lima = document.querySelectorAll('.iris, .fuschia, .ambar');
-            for (const box of lima) {
-                box.classList.remove('fuschia');
-                box.classList.remove('iris');
-                box.classList.remove('ambar');
-                box.classList.add('lima');
-            }
-            fuschiabutton = document.getElementById('fuschiabutton');
-            irisbutton = document.getElementById('irisbutton');
-            ambarbutton = document.getElementById('ambarbutton');
-            limabutton = document.getElementById('limabutton');
+            const stylesheet = document.styleSheets[0];
+
+            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--lima100)');
+            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--lima80)');
+            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--lima60)');
+            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--lima40)');
+            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--lima20)');
             
-            fuschiabutton.classList.remove('selected');
-            irisbutton.classList.remove('selected');
-            ambarbutton.classList.remove('selected');
-            limabutton.classList.add('selected');
+            // Button
+            document.getElementById("limabutton").classList.add("selected");
+            document.querySelectorAll(".temas button").forEach((button) => {
+                if (button.id != "limabutton") {
+                    button.classList.remove("selected");
+                }
+            });
         }
     </script>
 </body>

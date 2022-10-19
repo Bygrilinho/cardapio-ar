@@ -23,6 +23,12 @@
     --lima40: #b3f2d1;
     --lima20: #e5fff2;
 
+    --accent100: var(--iris100);
+    --accent80: var(--iris80);
+    --accent60: var(--iris60);
+    --accent40: var(--iris40);
+    --accent20: var(--iris20);
+
     --textwhite: #f6f6f6;
     --textblack: #1e1e1e;
 }
@@ -34,22 +40,7 @@
 body {
     margin: 0;
     padding: 1%;
-}
-
-body.iris {
-    background-color: var(--iris60);
-}
-
-body.fuschia {
-    background-color: var(--fuschia60);
-}
-
-body.ambar {
-    background-color: var(--ambar60);
-}
-
-body.lima {
-    background-color: var(--lima60);
+    background-color: var(--accent60);
 }
 
 div.header {
@@ -63,25 +54,9 @@ div.header {
     width: auto;
     height: 64px;
 
-    /* background: var(--iris100); */
+    background: var(--accent100);
 
     border-radius: 12px;
-}
-
-div.header.iris {
-    background-color: var(--iris100);
-}
-
-div.header.fuschia {
-    background-color: var(--fuschia100);
-}
-
-div.header.ambar {
-    background-color: var(--ambar100);
-}
-
-div.header.lima {
-    background-color: var(--lima100);
 }
 
 div.temas {
@@ -99,22 +74,7 @@ div.temas {
     position: absolute;
     right: 0;
     margin-right: 2%;
-}
-
-div.temas.iris {
-    background-color: var(--iris60);
-}
-
-div.temas.fuschia {
-    background-color: var(--fuschia60);
-}
-
-div.temas.ambar {
-    background-color: var(--ambar60);
-}
-
-div.temas.lima {
-    background-color: var(--lima60);
+    background-color: var(--accent60);
 }
 
 button {
@@ -185,22 +145,7 @@ div.content {
     gap: 10px;
     margin-top: 1%;
     border-radius: 12px;
-}
-
-div.content.iris {
-    background-color: var(--iris40);
-}
-
-div.content.fuschia {
-    background-color: var(--fuschia40);
-}
-
-div.content.ambar {
-    background-color: var(--ambar40);
-}
-
-div.content.lima {
-    background-color: var(--lima40);
+    background-color: var(--accent40);
 }
 
 iframe {
