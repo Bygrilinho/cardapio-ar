@@ -31,6 +31,7 @@
 
     --textwhite: #f6f6f6;
     --textblack: #1e1e1e;
+    --padding: 20px;
 }
 
 * {
@@ -39,7 +40,7 @@
 
 body {
     margin: 0;
-    padding: 1%;
+    padding: var(--padding);
     background-color: var(--accent60);
 }
 
@@ -143,7 +144,7 @@ div.content {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 1%;
+    margin-top: var(--padding);
     border-radius: 12px;
     background-color: var(--accent40);
 }
@@ -155,4 +156,29 @@ iframe {
     border: none;
     width: 50%;
     height: 800px;
+}
+
+@media only screen and (max-width: 1000px) {
+    :root {
+        --padding: 10px;
+    }
+    iframe {
+        width: 100%;
+    }
+    div.header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        height: auto;
+    }
+    div.temas {
+        align-items: center;
+        gap: 10px;
+        width: 70%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
+        position: relative;
+    }
 }
