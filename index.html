@@ -13,10 +13,10 @@
     <div class="header">
         <p class="header">Empório Coffee Shop</p>
         <div class="temas">
-            <button id="irisbutton" class="selected" type="button" onclick="toggleIris()">IRIS</button>
-            <button id="fuschiabutton" type="button" onclick="toggleFuschia()">FUSCHIA</button>
-            <button id="ambarbutton" type="button" onclick="toggleAmbar()">AMBAR</button>
-            <button id="limabutton" type="button" onclick="toggleLima()">LIMA</button>
+            <button id="irisbutton" class="selected" type="button" onclick="toggleTheme('iris')">IRIS</button>
+            <button id="fuschiabutton" type="button" onclick="toggleTheme('fuschia')">FUSCHIA</button>
+            <button id="ambarbutton" type="button" onclick="toggleTheme('ambar')">AMBAR</button>
+            <button id="limabutton" type="button" onclick="toggleTheme('lima')">LIMA</button>
         </div>
     </div>
     <div class="content">
@@ -27,73 +27,19 @@
         <iframe src="ar.html" scrolling="no"></iframe>
     </div>
     <script>
-        function toggleIris() {
+        function toggleTheme(themeName) {
             const stylesheet = document.styleSheets[0];
 
-            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--iris100)');
-            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--iris80)');
-            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--iris60)');
-            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--iris40)');
-            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--iris20)');
+            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--' + themeName + '100)');
+            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--' + themeName + '80)');
+            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--' + themeName + '60)');
+            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--' + themeName + '40)');
+            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--' + themeName + '20)');
             
             // Button
-            document.getElementById("irisbutton").classList.add("selected");
+            document.getElementById(themeName + "button").classList.add("selected");
             document.querySelectorAll(".temas button").forEach((button) => {
-                if (button.id != "irisbutton") {
-                    button.classList.remove("selected");
-                }
-            });
-        }
-
-        function toggleFuschia() {
-            const stylesheet = document.styleSheets[0];
-            
-            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--fuschia100)');
-            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--fuschia80)');
-            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--fuschia60)');
-            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--fuschia40)');
-            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--fuschia20)');
-            
-            // Button
-            document.getElementById("fuschiabutton").classList.add("selected");
-            document.querySelectorAll(".temas button").forEach((button) => {
-                if (button.id != "fuschiabutton") {
-                    button.classList.remove("selected");
-                }
-            });
-        }
-
-        function toggleAmbar() {
-            const stylesheet = document.styleSheets[0];
-
-            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--ambar100)');
-            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--ambar80)');
-            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--ambar60)');
-            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--ambar40)');
-            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--ambar20)');
-            
-            // Button
-            document.getElementById("ambarbutton").classList.add("selected");
-            document.querySelectorAll(".temas button").forEach((button) => {
-                if (button.id != "ambarbutton") {
-                    button.classList.remove("selected");
-                }
-            });
-        }
-
-        function toggleLima() {
-            const stylesheet = document.styleSheets[0];
-
-            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--lima100)');
-            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--lima80)');
-            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--lima60)');
-            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--lima40)');
-            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--lima20)');
-            
-            // Button
-            document.getElementById("limabutton").classList.add("selected");
-            document.querySelectorAll(".temas button").forEach((button) => {
-                if (button.id != "limabutton") {
+                if (button.id != themeName + "button") {
                     button.classList.remove("selected");
                 }
             });
