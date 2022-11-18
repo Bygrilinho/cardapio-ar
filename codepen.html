@@ -1,0 +1,49 @@
+<head>
+    <meta charset="utf-8">
+    <title>AR.js - Hello World</title>
+    <meta name="description" content="AR.js - Augmented Reality for the Web.">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <style>
+        /* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+
+.carousel-cell {
+    width: 50%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Flickity - half-width cells</h1>
+    
+    <!-- Flickity HTML init -->
+    <div class="carousel" data-flickity>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+    </div>
+</body>

@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
 :root {
     --iris100: #5d5fef;
     --iris80: #7879f1;
@@ -32,10 +35,11 @@
     --textwhite: #f6f6f6;
     --textblack: #1e1e1e;
     --padding: 20px;
+    --radius: 12px;
 }
 
 * {
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 body {
@@ -57,7 +61,25 @@ div.header {
 
     background: var(--accent100);
 
-    border-radius: 12px;
+    border-radius: var(--radius);
+}
+
+button {
+    padding: 12px;
+    border-radius: var(--radius);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: var(--accent80);
+    color: var(--textwhite);
+    transition: all 0.3s ease-in-out;
+}
+
+button.carrinho {
+    background-color: #1c924d;
 }
 
 div.temas {
@@ -71,17 +93,17 @@ div.temas {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     position: absolute;
     right: 0;
     margin-right: 2%;
     background-color: var(--accent60);
 }
 
-button {
+div.temas button {
     width: 0px;
     padding: 12px;
-    border-radius: 12px;
+    border-radius: var(--radius);
     border: none;
     outline: none;
     cursor: pointer;
@@ -90,41 +112,57 @@ button {
     font-weight: bold;
 }
 
-button.selected {
+div.temas button.selected {
     font-size: 14px;
     width: 100px;
 }
 
-button#irisbutton {
+div.temas button#irisbutton {
     background-color: var(--iris100);
     color: var(--textwhite);
 }
 
-button#fuschiabutton {
+div.temas button#fuschiabutton {
     background-color: var(--fuschia100);
     color: var(--textwhite);
 }
 
-button#ambarbutton {
+div.temas button#ambarbutton {
     background-color: var(--ambar100);
     color: var(--textwhite);
 }
 
-button#limabutton {
+div.temas button#limabutton {
     background-color: var(--lima100);
     color: var(--textwhite);
 }
 
-p.header {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 34px;
-    line-height: 40px;
 
     text-align: center;
     letter-spacing: -0.02em;
+    color: var(--textblack);
+}
 
+h1 {
+    font-size: 34px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h1.header, h2.header, h3.header, h4.header, h5.header, h6.header {
     color: var(--textwhite);
 }
 
@@ -145,17 +183,58 @@ div.content {
     align-items: center;
     gap: 10px;
     margin-top: var(--padding);
-    border-radius: 12px;
+    border-radius: var(--radius);
     background-color: var(--accent40);
 }
 
 iframe {
     margin: 0%;
-    border-radius: 12px;
+    border-radius: var(--radius);
     justify-self: center;
     border: none;
     width: 50%;
     height: 800px;
+}
+
+.carousel {
+    width: 100%;
+    border-radius: var(--radius);
+}
+  
+.carousel-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
+    padding: 10px;
+    background: var(--accent20);
+    border-radius: var(--radius);
+    counter-increment: gallery-cell;
+    gap: 10px;
+    /* overflow: hidden; */
+}
+
+.carousel-cell img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+.carousel-cell h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flickity-page-dots {
+    position: initial;
+    margin-top: 5px;
+}
+
+.swal2-container {
+    font-family: 'Inter';
 }
 
 @media only screen and (max-width: 1000px) {

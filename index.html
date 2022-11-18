@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="/assets/css/flickity.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Cardápio AR</title>
 </head>
 <body>
     <div class="header">
-        <p class="header">Empório Coffee Shop</p>
+        <h1 class="header">Empório Coffee Shop</h1>
         <div class="temas">
             <button id="irisbutton" class="selected" type="button" onclick="toggleTheme('iris')">IRIS</button>
             <button id="fuschiabutton" type="button" onclick="toggleTheme('fuschia')">FUSCHIA</button>
@@ -23,20 +22,39 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatem eveniet incidunt repellendus corporis? Quo harum, veniam eos, magnam, natus itaque eius ducimus dolor rem deserunt doloremque aut neque nemo.</p>
     </div>
     <div class="content">
-        <p>test</p>
+        <div class="carousel" data-flickity='{"wrapAround":"true"}'>
+            <div class="carousel-cell">
+                <h2 class="legend">Item 1</h2>
+                <img src="/assets/images/background.webp" alt="Café">
+                <button class="button" type="button" onclick="toggleModel('cup1')">Visualizar</button>
+                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
+            </div>
+            <div class="carousel-cell">
+                <h2 class="legend">Item 2</h2>
+                <img src="/assets/images/background.webp" alt="Café">
+                <button class="button" type="button" onclick="toggleModel('cup2')">Visualizar</button>
+                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
+            </div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+        </div>
     </div>
-    <div class="content">
-        <iframe src="ar.html" scrolling="no"></iframe>
+    <div class="content" id="viewer">
+        <iframe id="iframe" src="ar.html" scrolling="no"></iframe>
     </div>
+    <script async src="/assets/js/flickity.pkgd.min.js"></script>
+    <script async src="/assets/js/sweetalert2.all.min.js"></script>
     <script>
         function toggleTheme(themeName) {
-            const stylesheet = document.styleSheets[0];
+            const stylesheet = document.styleSheets[1];
 
-            stylesheet.cssRules[0].style.setProperty('--accent100', 'var(--' + themeName + '100)');
-            stylesheet.cssRules[0].style.setProperty('--accent80', 'var(--' + themeName + '80)');
-            stylesheet.cssRules[0].style.setProperty('--accent60', 'var(--' + themeName + '60)');
-            stylesheet.cssRules[0].style.setProperty('--accent40', 'var(--' + themeName + '40)');
-            stylesheet.cssRules[0].style.setProperty('--accent20', 'var(--' + themeName + '20)');
+            stylesheet.cssRules[2].style.setProperty('--accent100', 'var(--' + themeName + '100)');
+            stylesheet.cssRules[2].style.setProperty('--accent80', 'var(--' + themeName + '80)');
+            stylesheet.cssRules[2].style.setProperty('--accent60', 'var(--' + themeName + '60)');
+            stylesheet.cssRules[2].style.setProperty('--accent40', 'var(--' + themeName + '40)');
+            stylesheet.cssRules[2].style.setProperty('--accent20', 'var(--' + themeName + '20)');
             
             // Button
             document.getElementById(themeName + "button").classList.add("selected");
@@ -45,6 +63,39 @@
                     button.classList.remove("selected");
                 }
             });
+        }
+
+        function toggleModel(modelName) {
+            const scene = document.getElementById('iframe').contentDocument.getElementById('marker');
+            const model = scene.querySelector('#' + modelName);
+            const modeltext = scene.querySelector('#' + modelName + 'text');
+            model.setAttribute('visible', 'true');
+            modeltext.setAttribute('visible', 'true');
+
+            scene.querySelectorAll('a-entity, a-obj-model').forEach((model) => {
+                if (model.id != modelName) {
+                    model.setAttribute('visible', 'false');
+                }
+            });
+
+            scene.querySelectorAll('a-text').forEach((modeltext) => {
+                if (modeltext.id != modelName + "text") {
+                    modeltext.setAttribute('visible', 'false');
+                }
+            });
+            document.getElementById('viewer').scrollIntoView({behavior: 'smooth'});
+        }
+
+        function addToCart(){
+            Swal.fire({
+                icon: 'warning',
+                title: 'Boa men',
+                text: 'Só n fiz o carrinho ainda kkkk',
+                background: 'var(--accent40)',
+                iconColor: 'var(--accent100)',
+                confirmButtonColor: 'var(--accent100)',
+                confirmButtonText: 'Q isso irmão tmj'
+            })
         }
     </script>
 </body>
