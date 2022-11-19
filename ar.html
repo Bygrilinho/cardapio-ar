@@ -15,6 +15,7 @@
             <a-asset-item id="coffee-cup" src="/assets/models/coffee_cup/scene.gltf"></a-asset-item>
             <a-asset-item id="tea-cup" src="/assets/models/tea_cup/scene.gltf"></a-asset-item>
             <a-asset-item id="creamed-coffee" src="/assets/models/creamed_coffee/scene.gltf"></a-asset-item>
+            <a-asset-item id="wallace-mug" src="/assets/models/wallace_mug/scene.gltf"></a-asset-item>
         </a-assets>
         <a-marker id="marker" type="pattern" url="/assets/images/pattern/marker.patt">
             <a-entity id="cup1" visible="true" gltf-model="#coffee-cup" position="0 0 0" scale="2 2 2"></a-entity>
@@ -25,6 +26,9 @@
 
             <a-entity id="cup3" visible="false" gltf-model="#creamed-coffee" position="0 5 0" scale="35 35 35"></a-entity>
             <a-text id="cup3text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Milk shake" position="0 5 0" scale="3 3 3"></a-text>
+            
+            <a-entity id="cup4" visible="false" gltf-model="#wallace-mug" position="0 5 0" scale="35 35 35"></a-entity>
+            <a-text id="cup4text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Wallace" position="0 5 0" scale="3 3 3"></a-text>
         </a-marker>
         <a-entity camera id="camera"></a-entity>
     </a-scene>

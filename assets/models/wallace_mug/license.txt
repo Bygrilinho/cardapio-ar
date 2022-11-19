@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wallace Mug
+* source:	https://sketchfab.com/3d-models/wallace-mug-7433fdb49fed4aea9210a841c30aa62c
+* author:	Duznot (https://sketchfab.com/duz_vr)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wallace Mug" (https://sketchfab.com/3d-models/wallace-mug-7433fdb49fed4aea9210a841c30aa62c) by Duznot (https://sketchfab.com/duz_vr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
