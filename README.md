@@ -9,8 +9,8 @@ Hospedado no Netlify.
 ## Créditos
 ### Grupo
 [Thiago Henrique da Silva](https://github.com/Bygrilinho)  
-[Lucas Prata Pradella](https://github.com/pradellalpz)  
 [Ricardo Almeida Amaro](https://github.com/Riccks)  
+[Lucas Prata Pradella](https://github.com/pradellalpz)  
 [Jonathas Teotônio Ferreira da Silva](https://github.com/Preto4k)  
 [Daniel Jordão Novello](https://github.com/DaniNovello)
 ### Bibliotecas
