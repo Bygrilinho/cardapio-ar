@@ -10,7 +10,7 @@
 <!-- we import arjs version without NFT but with marker + location based support -->
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 <body style="margin : 0px">
-    <a-scene embedded arjs='sourceType: webcam' renderer="logarithmicDepthBuffer: true;">
+    <a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false;" renderer="logarithmicDepthBuffer: true;">
         <a-assets>
             <a-asset-item id="coffee-cup" src="/assets/models/coffee-cup.gltf"></a-asset-item>
             <a-asset-item id="tea-cup" src="/assets/models/tea_cup/scene.gltf"></a-asset-item>
@@ -18,19 +18,19 @@
             <a-asset-item id="iced-coffee" src="/assets/models/iced_coffee/scene.gltf"></a-asset-item>
         </a-assets>
         <a-marker id="marker" type="pattern" url="/assets/images/pattern/marker.patt">
-            <a-entity id="cup1" visible="true" gltf-model="#coffee-cup" position="0 0.5 0" scale="3 3 3"></a-entity>
+            <a-entity id="cup1" visible="true" gltf-model="#coffee-cup" position="0 0 0" scale="2 2 2"></a-entity>
             <a-text id="cup1text" visible="true" value="Cafe" position="0 5 0" scale="3 3 3"></a-text>
 
             <a-entity id="cup2" visible="false" gltf-model="#tea-cup" position="0 0.5 0" scale="60 60 60"></a-entity>
             <a-text id="cup2text" visible="false" value="Cha" position="0 5 0" scale="3 3 3"></a-text>
 
-            <a-entity id="cup3" visible="false" gltf-model="#creamed-coffee" position="0 0.5 0" scale="35 35 35"></a-entity>
+            <a-entity id="cup3" visible="false" gltf-model="#creamed-coffee" position="0 5 0" scale="35 35 35"></a-entity>
             <a-text id="cup3text" visible="false" value="Fodase" position="0 5 0" scale="3 3 3"></a-text>
 
             <a-entity id="cup4" visible="false" gltf-model="#iced-coffee" position="0 0.5 0" scale="1 1 1"></a-entity>
             <a-text id="cup4text" visible="false" value="Gelado" position="0 5 0" scale="3 3 3"></a-text>
         </a-marker>
-        <a-entity camera id="camera" rotation-reader position="0 1.6 16" listener look-controls="enabled: false; touchEnabled: false"></a-entity>
+        <a-entity camera id="camera"></a-entity>
     </a-scene>
 </body>
 </html>
