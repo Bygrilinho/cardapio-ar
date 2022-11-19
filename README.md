@@ -20,7 +20,7 @@ Hospedado no Netlify.
 [Font Awesome](https://fontawesome.com/)  
 [SweetAlert2](https://sweetalert2.github.io/)
 ### Fontes
-[Inter](https://fonts.google.com/specimen/Inter)
+[Inter](https://fonts.google.com/specimen/Inter)  
 [Work Sans](https://fonts.google.com/specimen/Work+Sans)
 ### Modelos 3D
 Café: ["Coffee Shop Cup"](https://sketchfab.com/3d-models/coffee-shop-cup-37e6805f2b7a4158a1d61fe75f8e2a33) by [David Zerba](https://sketchfab.com/DavidZerba) licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)  
