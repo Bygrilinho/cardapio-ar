@@ -1,0 +1,603 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 466,
+      "max": [
+        3.972041368484497,
+        0.7558075785636902,
+        3.972041368484497
+      ],
+      "min": [
+        -3.972041606903076,
+        0.007002517580986023,
+        -3.9720427989959717
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 5592,
+      "componentType": 5126,
+      "count": 466,
+      "max": [
+        0.9989631772041321,
+        1.0,
+        0.9989632368087769
+      ],
+      "min": [
+        -0.9989632368087769,
+        -1.0,
+        -0.9989632368087769
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 466,
+      "max": [
+        0.9999997615814209,
+        0.9848686456680298,
+        0.8150761723518372,
+        1.0
+      ],
+      "min": [
+        -0.9636185169219971,
+        -0.9848592877388,
+        -0.9982732534408569,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 466,
+      "max": [
+        0.8905807137489319,
+        0.4049035310745239
+      ],
+      "min": [
+        0.0035270750522613525,
+        0.0069344062358140945
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2160,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 11184,
+      "componentType": 5126,
+      "count": 566,
+      "max": [
+        2.2441024780273438,
+        2.495469331741333,
+        2.244102716445923
+      ],
+      "min": [
+        -2.244102716445923,
+        0.36443662643432617,
+        -2.244102954864502
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 17976,
+      "componentType": 5126,
+      "count": 566,
+      "max": [
+        0.9995160698890686,
+        1.0,
+        0.999515950679779
+      ],
+      "min": [
+        -0.9995160698890686,
+        -1.0,
+        -0.9995160698890686
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 7456,
+      "componentType": 5126,
+      "count": 566,
+      "max": [
+        0.9892449975013733,
+        0.9990149736404419,
+        0.99443519115448,
+        1.0
+      ],
+      "min": [
+        -0.986918568611145,
+        -0.9990148544311523,
+        -0.9995814561843872,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 3728,
+      "componentType": 5126,
+      "count": 566,
+      "max": [
+        0.9902356863021851,
+        0.9991832971572876
+      ],
+      "min": [
+        0.018277496099472046,
+        0.3202234208583832
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 8640,
+      "componentType": 5125,
+      "count": 2880,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 24768,
+      "componentType": 5126,
+      "count": 280,
+      "max": [
+        3.1326074600219727,
+        2.3997838497161865,
+        0.191116601228714
+      ],
+      "min": [
+        1.873194694519043,
+        1.110534906387329,
+        -0.191116601228714
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 28128,
+      "componentType": 5126,
+      "count": 280,
+      "max": [
+        0.9824938178062439,
+        0.999545693397522,
+        0.9959793090820313
+      ],
+      "min": [
+        -0.9896246790885925,
+        -0.9995058178901672,
+        -0.9959793090820313
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 16512,
+      "componentType": 5126,
+      "count": 280,
+      "max": [
+        0.6989735960960388,
+        0.9980838298797607,
+        0.9997898936271667,
+        1.0
+      ],
+      "min": [
+        -0.6941638588905334,
+        -0.9991729259490967,
+        -0.9876142740249634,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 8256,
+      "componentType": 5126,
+      "count": 280,
+      "max": [
+        0.9906538724899292,
+        0.41238537430763245
+      ],
+      "min": [
+        0.6838384866714478,
+        0.005916297435760498
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 20160,
+      "componentType": 5125,
+      "count": 936,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 31488,
+      "componentType": 5126,
+      "count": 238,
+      "max": [
+        1.9820077419281006,
+        2.075709819793701,
+        1.9820077419281006
+      ],
+      "min": [
+        -1.9820078611373901,
+        0.7424824237823486,
+        -1.982008457183838
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 34344,
+      "componentType": 5126,
+      "count": 238,
+      "max": [
+        0.9198275208473206,
+        1.0,
+        0.919827401638031
+      ],
+      "min": [
+        -0.9198275208473206,
+        -1.0,
+        -0.9198275208473206
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 10496,
+      "componentType": 5126,
+      "count": 238,
+      "max": [
+        0.9429585933685303,
+        2.0307507514953613
+      ],
+      "min": [
+        0.49984854459762573,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 23904,
+      "componentType": 5125,
+      "count": 840,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Tomas Rubianes (https://sketchfab.com/rasamot)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/14-tea-cup-77e5bdbe069a41e4a1354f67b1f7bd2a",
+      "title": "14 Tea Cup"
+    },
+    "generator": "Sketchfab-14.15.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 27264,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12400,
+      "byteOffset": 27264,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 37200,
+      "byteOffset": 39664,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 20992,
+      "byteOffset": 76864,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 97856,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_clearcoat",
+    "KHR_materials_transmission"
+  ],
+  "images": [
+    {
+      "uri": "textures/m_teacup_baseColor.png"
+    },
+    {
+      "uri": "textures/m_teacup_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/m_teacup_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 1.0,
+          "clearcoatRoughnessFactor": 0.04
+        }
+      },
+      "name": "m_teacup",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 0.06894954346527538
+        }
+      },
+      "name": "m_tea",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.08756462137077989,
+          0.011816891805808395,
+          0.0016820681473392282,
+          0.9310504565347246
+        ],
+        "metallicFactor": 0.821335836452073,
+        "roughnessFactor": 0.07771452255854494
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "dish_m_teacup_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "cup_m_teacup_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "handlecup_m_teacup_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TANGENT": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "tea_m_tea_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15,
+            "TEXCOORD_0": 17
+          },
+          "indices": 18,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "14 tea cup.fbx"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "dish"
+    },
+    {
+      "mesh": 0,
+      "name": "dish_m_teacup_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "name": "cup"
+    },
+    {
+      "mesh": 1,
+      "name": "cup_m_teacup_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "name": "handlecup"
+    },
+    {
+      "mesh": 2,
+      "name": "handlecup_m_teacup_0"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        0.9836128950119019,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.9856730699539185,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.9836128950119019,
+        0.0,
+        0.0,
+        0.007881498895585537,
+        0.0,
+        1.0
+      ],
+      "name": "tea"
+    },
+    {
+      "mesh": 3,
+      "name": "tea_m_tea_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

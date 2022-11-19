@@ -1,0 +1,11 @@
+Model Information:
+* title:	14 Tea Cup
+* source:	https://sketchfab.com/3d-models/14-tea-cup-77e5bdbe069a41e4a1354f67b1f7bd2a
+* author:	Tomas Rubianes (https://sketchfab.com/rasamot)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "14 Tea Cup" (https://sketchfab.com/3d-models/14-tea-cup-77e5bdbe069a41e4a1354f67b1f7bd2a) by Tomas Rubianes (https://sketchfab.com/rasamot) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
