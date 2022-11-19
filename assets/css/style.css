@@ -244,6 +244,7 @@ iframe {
 
 .carousel-cell img {
     display: block;
+    background-image: linear-gradient(var(--accent40), var(--accent60));
     width: 100%;
     height: auto;
     border-radius: var(--radius);
