@@ -55,8 +55,11 @@
             </div>
         </div>
     </div>
-    <div class="content" id="viewer">
+    <div class="content" id="viewer" style="position:relative">
+        
         <iframe id="iframe" src="ar.html"></iframe>
+        <!-- Div covering the iframe to prevent interaction -->
+        <div id="cover"></div>
     </div>
     <script async src="/assets/js/flickity.pkgd.min.js"></script>
     <script async src="/assets/js/sweetalert2.all.min.js"></script>
