@@ -218,6 +218,7 @@ iframe {
     border-radius: var(--radius);
     justify-self: center;
     border: none;
+    overflow: hidden;
     width: 50%;
     height: 800px;
 }
