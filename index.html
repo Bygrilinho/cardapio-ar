@@ -89,7 +89,7 @@
             model.setAttribute('visible', 'true');
             modeltext.setAttribute('visible', 'true');
 
-            scene.querySelectorAll('a-entity, a-obj-model').forEach((model) => {
+            scene.querySelectorAll('a-entity').forEach((model) => {
                 if (model.id != modelName) {
                     model.setAttribute('visible', 'false');
                 }
