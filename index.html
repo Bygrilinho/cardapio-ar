@@ -13,9 +13,6 @@
     <header>
         <h1 class="header">Empório Coffee Shop</h1>
         <div class="menu">
-            <a href="#carrinho">
-                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-            </a>
             <div class="temas">
                 <button id="irisbutton" class="selected" type="button" onclick="toggleTheme('iris')">IRIS</button>
                 <button id="fuschiabutton" type="button" onclick="toggleTheme('fuschia')">FUSCHIA</button>
@@ -32,6 +29,7 @@
             <div class="carousel-cell">
                 <h2 class="legend">Café</h2>
                 <img src="/assets/images/tea_cup.png" alt="Chá">
+                <button type="button" onclick="toggleModel('item2')"><i class="fa-solid fa-vr-cardboard fa-lg"></i> Visualizar em RA</button>
                 <p>Um café bem delicioso e fresquinho. Temos a opção Tradicional e a opção Descafeinado.</p>
                 <h3>Preços e Opções</h3>
                 <table>
@@ -51,12 +49,11 @@
                         <td>R$ 11,90</td>
                     </tr>
                 </table>
-                <button type="button" onclick="toggleModel('item2')">Visualizar</button>
-                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
             <div class="carousel-cell">
                 <h2 class="legend">Cafés Expressos</h2>
                 <img src="/assets/images/coffee_cup.png" alt="Café">
+                <button type="button" onclick="toggleModel('item1')"><i class="fa-solid fa-vr-cardboard fa-lg"></i> Visualizar em RA</button>
                 <p>Dois cafés expressos muito cremosos. O Machiatto é duplamente expresso e possui leite vaporizado, e o Mocha Caramelo é preparado com cobertura e calda de caramelo.</p>
                 <h3>Preços e Opções</h3>
                 <table>
@@ -74,12 +71,11 @@
                         <td colspan="2">R$ 18,90</td>
                     </tr>
                 </table>
-                <button type="button" onclick="toggleModel('item1')">Visualizar</button>
-                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
             <div class="carousel-cell">
                 <h2 class="legend">Cappuccinos</h2>
                 <img src="/assets/images/cappuccino.png" alt="Cappuccino">
+                <button type="button" onclick="toggleModel('item3')"><i class="fa-solid fa-vr-cardboard fa-lg"></i> Visualizar em RA</button>
                 <p>Cappuccino bem cremoso, com um toque de canela ou pedaços de chocolate!</p>
                 <h3>Preços e Opções</h3>
                 <table>
@@ -99,12 +95,11 @@
                         <td>R$ 19,90</td>
                     </tr>
                 </table>
-                <button type="button" onclick="toggleModel('item3')">Visualizar</button>
-                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
             <div class="carousel-cell">
                 <h2 class="legend">Frapuccino de Chocolate</h2>
                 <img src="/assets/images/creamed_coffee.png" alt="Milk Shake">
+                <button type="button" onclick="toggleModel('item4')"><i class="fa-solid fa-vr-cardboard fa-lg"></i> Visualizar em RA</button>
                 <p>Frappê de chocolate bem cremoso! Já acompanha Chantilly e calda de chocolate.</p>
                 <h3>Preços e Opções</h3>
                 <table>
@@ -121,12 +116,11 @@
                         <td>R$ 21,90</td>
                     </tr>
                 </table>
-                <button type="button" onclick="toggleModel('item4')">Visualizar</button>
-                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
             <div class="carousel-cell">
                 <h2 class="legend">Croissant</h2>
                 <img src="/assets/images/croissant.png" alt="Croissant">
+                <button type="button" onclick="toggleModel('item5')"><i class="fa-solid fa-vr-cardboard fa-lg"></i> Visualizar em RA</button>
                 <p>Croissant delicioso de crocante! Disponível em 3 opções, duas salgadas e uma doce.</p>
                 <h3>Preços e Opções</h3>
                 <table>
@@ -146,8 +140,6 @@
                         <td>R$ 8,90</td>
                     </tr>
                 </table>
-                <button type="button" onclick="toggleModel('item5')">Visualizar</button>
-                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
         </div>
     </div>
@@ -158,7 +150,6 @@
         <div id="cover"></div>
     </div>
     <script async src="/assets/js/flickity.pkgd.min.js"></script>
-    <script async src="/assets/js/sweetalert2.all.min.js"></script>
     <script>
         function toggleTheme(themeName) {
             const stylesheet = document.styleSheets[1];
@@ -197,18 +188,6 @@
                 }
             });
             document.getElementById('viewer').scrollIntoView({behavior: 'smooth'});
-        }
-
-        function addToCart(){
-            Swal.fire({
-                icon: 'warning',
-                title: 'Boa men',
-                text: 'Só n fiz o carrinho ainda kkkk',
-                background: 'var(--accent40)',
-                iconColor: 'var(--accent100)',
-                confirmButtonColor: 'var(--accent100)',
-                confirmButtonText: 'Q isso irmão tmj'
-            })
         }
     </script>
 </body>

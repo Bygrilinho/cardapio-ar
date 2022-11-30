@@ -17,8 +17,7 @@ Hospedado no Netlify.
 [AR.js](https://ar-js-org.github.io/AR.js-Docs/)  
 [A-Frame](https://aframe.io/)  
 [Flickity](https://flickity.metafizzy.co/)  
-[Font Awesome](https://fontawesome.com/)  
-[SweetAlert2](https://sweetalert2.github.io/)
+[Font Awesome](https://fontawesome.com/)
 ### Fontes
 [Inter](https://fonts.google.com/specimen/Inter)  
 [Work Sans](https://fonts.google.com/specimen/Work+Sans)

@@ -154,6 +154,10 @@ i {
     text-decoration: none;
 }
 
+i .fa-vr-cardboard {
+    padding-right: 5px;
+}
+
 div.menu {
     margin-left: auto;
     display: flex;
