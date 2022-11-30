@@ -14,27 +14,36 @@
 </head>
 <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
 <!-- we import arjs version without NFT but with marker + location based support -->
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/3.4.1/aframe/build/aframe-ar.js"></script>
 <body style="margin : 0px">
     <a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false;" renderer="logarithmicDepthBuffer: true;">
         <a-assets>
             <a-asset-item id="coffee-cup" src="/assets/models/coffee_cup/scene.gltf"></a-asset-item>
             <a-asset-item id="tea-cup" src="/assets/models/tea_cup/scene.gltf"></a-asset-item>
+            <a-asset-item id="cappuccino" src="/assets/models/cappuccino/scene.gltf"></a-asset-item>
             <a-asset-item id="creamed-coffee" src="/assets/models/creamed_coffee/scene.gltf"></a-asset-item>
+            <a-asset-item id="croissant" src="/assets/models/croissant/scene.gltf"></a-asset-item>
+            <a-asset-item id="toasts" src="/assets/models/toasts/scene.gltf"></a-asset-item>
             <a-asset-item id="wallace-mug" src="/assets/models/wallace_mug/scene.gltf"></a-asset-item>
         </a-assets>
         <a-marker id="marker" type="pattern" url="/assets/images/pattern/marker.patt">
-            <a-entity id="cup1" visible="true" gltf-model="#coffee-cup" position="0 0 0" scale="2 2 2"></a-entity>
-            <a-text id="cup1text" visible="true" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Café\nIngredientes:" side="double" position="1 3 0" scale="3 3 3"></a-text>
+            <a-entity id="item1" visible="true" gltf-model="#coffee-cup" position="0 0 0" scale="2 2 2"></a-entity>
+            <a-text id="item1text" visible="true" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Café\nIngredientes:" side="double" position="1 3 0" scale="3 3 3"></a-text>
 
-            <a-entity id="cup2" visible="false" gltf-model="#tea-cup" position="0 0.5 0" scale="60 60 60"></a-entity>
-            <a-text id="cup2text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Chá" position="0 5 0" scale="3 3 3"></a-text>
+            <a-entity id="item2" visible="false" gltf-model="#tea-cup" position="0 0.5 0" scale="60 60 60"></a-entity>
+            <a-text id="item2text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Chá" position="0 5 0" scale="3 3 3"></a-text>
 
-            <a-entity id="cup3" visible="false" gltf-model="#creamed-coffee" position="0 5 0" scale="35 35 35"></a-entity>
-            <a-text id="cup3text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Milk shake" position="0 5 0" scale="3 3 3"></a-text>
+            <a-entity id="item3" visible="false" gltf-model="#cappuccino" position="0 0.5 0" scale="20 20 20"></a-entity>
+            <a-text id="item3text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Cappuccino" position="0 5 0" scale="3 3 3"></a-text>
+
+            <a-entity id="item4" visible="false" gltf-model="#creamed-coffee" position="0 3 0" scale="22 22 22"></a-entity>
+            <a-text id="item4text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Milk shake" position="0 5 0" scale="3 3 3"></a-text>
+
+            <a-entity id="item5" visible="false" gltf-model="#croissant" position="0 0 0" scale="1.5 1.5 1.5"></a-entity>
+            <a-text id="item5text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Wallace" position="0 2 0" scale="3 3 3"></a-text>
             
-            <a-entity id="cup4" visible="false" gltf-model="#wallace-mug" position="0 0 0" scale="1.5 1.5 1.5"></a-entity>
-            <a-text id="cup4text" visible="false" font="/assets/fonts/Inter-Regular-msdf.json" negate="false" value="Wallace" position="0 2 0" scale="3 3 3"></a-text>
+            <a-light type="point" intensity=1 color="#FFF" distance=0 decay=1 position="0 5 5"></a-light>
+            <a-lightlight type="point" intensity=1 color="#FFF" distance=0 decay=1 position="0 5 -5"></a-lightlight>
         </a-marker>
         <a-entity camera id="camera"></a-entity>
     </a-scene>

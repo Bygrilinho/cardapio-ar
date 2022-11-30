@@ -1,0 +1,11 @@
+Model Information:
+* title:	Toasts
+* source:	https://sketchfab.com/3d-models/toasts-ae97003dff3d45ac9f17c2b8f3a25398
+* author:	AK STUDIO (https://sketchfab.com/inven2000)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Toasts" (https://sketchfab.com/3d-models/toasts-ae97003dff3d45ac9f17c2b8f3a25398) by AK STUDIO (https://sketchfab.com/inven2000) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
