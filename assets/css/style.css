@@ -163,7 +163,7 @@ div.menu {
     gap: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, th {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
@@ -192,13 +192,37 @@ h1.header, h2.header, h3.header, h4.header, h5.header, h6.header {
     color: var(--textwhite);
 }
 
-body div p {
+p, a, li, td {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: -0.02em;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+th, td {
+    border: 1px solid var(--accent100);
+    text-align: center;
+    padding: 8px;
+}
+
+th:first-of-type {
+    border-top-left-radius: 10px;
+}
+th:last-of-type {
+    border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 10px;
 }
 
 div.content {
@@ -264,6 +288,11 @@ iframe {
 .carousel-cell h2 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.carousel-cell h3, .carousel-cell p, .carousel-cell a, .carousel-cell ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .flickity-page-dots {

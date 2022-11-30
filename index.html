@@ -25,32 +25,128 @@
         </div>
     </header>
     <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatem eveniet incidunt repellendus corporis? Quo harum, veniam eos, magnam, natus itaque eius ducimus dolor rem deserunt doloremque aut neque nemo.</p>
+        <p>Oferecemos aos nossos clientes o melhor dos aromas e sabores que uma xícara de café pode apresentar, além dos mais incríveis acompanhamentos para harmonizar e elevar essa experiência.</p>
     </div>
     <div class="content">
         <div class="carousel" data-flickity='{"wrapAround":"true"}'>
             <div class="carousel-cell">
                 <h2 class="legend">Café</h2>
-                <img src="/assets/images/coffee_cup.png" alt="Café">
-                <button class="button" type="button" onclick="toggleModel('cup1')">Visualizar</button>
-                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
-            </div>
-            <div class="carousel-cell">
-                <h2 class="legend">Chá</h2>
                 <img src="/assets/images/tea_cup.png" alt="Chá">
-                <button class="button" type="button" onclick="toggleModel('cup2')">Visualizar</button>
+                <p>Um café bem delicioso e fresquinho. Temos a opção Tradicional e a opção Descafeinado.</p>
+                <h3>Preços e Opções</h3>
+                <table>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Expresso</th>
+                        <th>Filtrado</th>
+                    </tr>
+                    <tr>
+                        <td>120ml</td>
+                        <td>R$ 7,90</td>
+                        <td>R$ 6,90</td>
+                    </tr>
+                    <tr>
+                        <td>240ml</td>
+                        <td>R$ 12,90</td>
+                        <td>R$ 11,90</td>
+                    </tr>
+                </table>
+                <button type="button" onclick="toggleModel('item2')">Visualizar</button>
                 <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
             <div class="carousel-cell">
-                <h2 class="legend">Milk Shake</h2>
+                <h2 class="legend">Cafés Expressos</h2>
+                <img src="/assets/images/coffee_cup.png" alt="Café">
+                <p>Dois cafés expressos muito cremosos. O Machiatto é duplamente expresso e possui leite vaporizado, e o Mocha Caramelo é preparado com cobertura e calda de caramelo.</p>
+                <h3>Preços e Opções</h3>
+                <table>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Expresso Machiatto</th>
+                        <th>Mocha Caramelo</th>
+                    </tr>
+                    <tr>
+                        <td>300ml</td>
+                        <td colspan="2">R$ 14,90</td>
+                    </tr>
+                    <tr>
+                        <td>500ml</td>
+                        <td colspan="2">R$ 18,90</td>
+                    </tr>
+                </table>
+                <button type="button" onclick="toggleModel('item1')">Visualizar</button>
+                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
+            </div>
+            <div class="carousel-cell">
+                <h2 class="legend">Cappuccinos</h2>
+                <img src="/assets/images/cappuccino.png" alt="Cappuccino">
+                <p>Cappuccino bem cremoso, com um toque de canela ou pedaços de chocolate!</p>
+                <h3>Preços e Opções</h3>
+                <table>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Canela</th>
+                        <th>Chocolate</th>
+                    </tr>
+                    <tr>
+                        <td>270ml</td>
+                        <td>R$ 14,90</td>
+                        <td>R$ 15,90</td>
+                    </tr>
+                    <tr>
+                        <td>400ml</td>
+                        <td>R$ 18,90</td>
+                        <td>R$ 19,90</td>
+                    </tr>
+                </table>
+                <button type="button" onclick="toggleModel('item3')">Visualizar</button>
+                <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
+            </div>
+            <div class="carousel-cell">
+                <h2 class="legend">Frapuccino de Chocolate</h2>
                 <img src="/assets/images/creamed_coffee.png" alt="Milk Shake">
-                <button class="button" type="button" onclick="toggleModel('cup3')">Visualizar</button>
+                <p>Frappê de chocolate bem cremoso! Já acompanha Chantilly e calda de chocolate.</p>
+                <h3>Preços e Opções</h3>
+                <table>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>300ml</td>
+                        <td>R$ 17,90</td>
+                    </tr>
+                    <tr>
+                        <td>500ml</td>
+                        <td>R$ 21,90</td>
+                    </tr>
+                </table>
+                <button type="button" onclick="toggleModel('item4')">Visualizar</button>
                 <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
             <div class="carousel-cell">
-                <h2 class="legend">Wallace</h2>
-                <img src="/assets/images/wallace_mug.png" alt="Wallace">
-                <button class="button" type="button" onclick="toggleModel('cup4')">Visualizar</button>
+                <h2 class="legend">Croissant</h2>
+                <img src="/assets/images/croissant.png" alt="Croissant">
+                <p>Croissant delicioso de crocante! Disponível em 3 opções, duas salgadas e uma doce.</p>
+                <h3>Preços e Opções</h3>
+                <table>
+                    <tr>
+                        <th>Opção</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>Frango e Catupiry</td>
+                        <td rowspan="2">R$ 7,90</td>
+                    </tr>
+                    <tr>
+                        <td>Presunto e Queijo</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>R$ 8,90</td>
+                    </tr>
+                </table>
+                <button type="button" onclick="toggleModel('item5')">Visualizar</button>
                 <button class="carrinho" type="button" onclick="addToCart()">Adicionar ao carrinho</button>
             </div>
         </div>
@@ -90,7 +186,7 @@
             modeltext.setAttribute('visible', 'true');
 
             scene.querySelectorAll('a-entity').forEach((model) => {
-                if (model.id != modelName) {
+                if (model.id != modelName && model.id != null) {
                     model.setAttribute('visible', 'false');
                 }
             });
