@@ -26,11 +26,11 @@
     --lima40: #b3f2d1;
     --lima20: #e5fff2;
 
-    --accent100: var(--iris100);
-    --accent80: var(--iris80);
-    --accent60: var(--iris60);
-    --accent40: var(--iris40);
-    --accent20: var(--iris20);
+    --accent100: var(--ambar100);
+    --accent80: var(--ambar80);
+    --accent60: var(--ambar60);
+    --accent40: var(--ambar40);
+    --accent20: var(--ambar20);
 
     --textwhite: #f6f6f6;
     --textblack: #1e1e1e;
@@ -88,6 +88,10 @@ button:hover {
 
 button.carrinho:hover {
     background-color: #1b703f;
+}
+
+img {
+    border-radius: var(--radius);
 }
 
 div.temas {
@@ -242,6 +246,35 @@ div.content {
     overflow: hidden;
 }
 
+img.banner {
+    object-fit: cover;
+    width: 100%;
+    height: 30vw;
+}
+
+div.twocol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col1 {
+    width: 49%;
+    background-color: var(--accent20);
+    height: 100%;
+    padding: 20px;
+    border-radius: var(--radius);
+}
+.col2 {
+    width: 49%;
+    height: 100%;
+}
+
+.col2 img {
+    width: 100%;
+}
+
 iframe {
     margin: 0%;
     border-radius: var(--radius);
@@ -286,7 +319,6 @@ iframe {
     background-image: linear-gradient(var(--accent40), var(--accent60));
     width: 100%;
     height: auto;
-    border-radius: var(--radius);
 }
 
 .carousel-cell h2 {
@@ -334,5 +366,27 @@ iframe {
     }
     .carousel-cell {
         width: 90%;
+    }
+    div.twocol {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col1, .col2 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .col2 img {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .col2 img {
+        width: 100%;
     }
 }
