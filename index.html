@@ -155,14 +155,22 @@
             </div>
         </div>
     </div>
-    <div class="content" id="viewer" style="position:relative">
+    <div class="content" id="viewer" style="position:relative; display: none;">
         
-        <iframe id="iframe" src="ar.html"></iframe>
-        <!-- Div covering the iframe to prevent interaction -->
+        <iframe id="iframe" src=""></iframe>
         <div id="cover"></div>
     </div>
     <script async src="/assets/js/flickity.pkgd.min.js"></script>
     <script>
+        var active = false;
+
+        function startAR() {
+            document.getElementById('viewer').style.display = 'flex';
+            document.getElementById('viewer').scrollIntoView({behavior: 'smooth'});
+            document.getElementById('iframe').src = 'ar.html';
+            active = true;
+        }
+
         function toggleTheme(themeName) {
             const stylesheet = document.styleSheets[1];
 
@@ -182,6 +190,14 @@
         }
 
         function toggleModel(modelName) {
+            if(!active) {
+                startAR();
+            }
+            // Aguarda o carregamento do iframe
+            setTimeout(() => {
+                document.getElementById('iframe').contentWindow.postMessage(modelName, '*');
+            }, 1000);
+            
             const scene = document.getElementById('iframe').contentDocument.getElementById('marker');
             const model = scene.querySelector('#' + modelName);
             const modeltext = scene.querySelector('#' + modelName + 'text');
