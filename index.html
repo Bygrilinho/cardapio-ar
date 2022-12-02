@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <!-- 
+        Grupo:
+        Thiago Henrique da Silva
+        Ricardo Almeida Amaro
+        Lucas Prata Pradella
+        Jonathas Teotônio Ferreira da Silva
+        Daniel Jordão Novello
+
+        Mais info em README.md (https://github.com/Bygrilinho/cardapio-ar/blob/master/README.md)
+    -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -197,7 +207,7 @@
             setTimeout(() => {
                 document.getElementById('iframe').contentWindow.postMessage(modelName, '*');
             }, 1000);
-            
+
             const scene = document.getElementById('iframe').contentDocument.getElementById('marker');
             const model = scene.querySelector('#' + modelName);
             const modeltext = scene.querySelector('#' + modelName + 'text');
